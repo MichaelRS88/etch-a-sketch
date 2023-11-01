@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="title">Etch-a-Sketch</div>
+    <div id="container">
+        <div id="controls">
+            <input type="color" id="penColorPicker" value="#000000">
+            <div id="buttonContainer"> <!-- Container for grouping the buttons -->
+                <button id="bgColorButton">Background Color</button>
+                <button id="eraserButton">Toggle Eraser</button>
+                <button id="rainbowButton">Toggle Rainbow</button>
+                <button id="shadingButton">Toggle Shading</button>
+                <label for="gridSizeRange">Grid Size: </label>
+                <input type="range" id="gridSizeRange" min="1" max="100" value="16">
+                <button onclick="clearSketch()">Clear</button>
+            </div>
+        </div>
+        
+        <!-- Etch-a-Sketch Frame -->
+        <div class="etch-a-sketch-frame">
+            <div id="sketch"></div>
+        </div>
+    </div>
+    
+    <script src="etch-a-sketch.js"></script>
+</body>
+</html>
+
+
